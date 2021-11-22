@@ -27,7 +27,7 @@ header h1 {
     color: rgb(7, 86, 117);
 }
 
-#header-h2 {
+#header__h2 {
     text-align: center;
     margin: 2px 0px;
 }
@@ -53,18 +53,18 @@ header img:hover { /* it fires when the user hovers over the element with the mo
     skew or shear an element, in this case, scale the image */
 }
 
-.flexbox-container {
+.container {
     display: flex; /* the ability of a flexible element to stretch or contract 
     to fill the available free space */
     justify-content: space-around; /* Items are evenly spaced along the main axis of the container */
 }
 
-.flexbox-container h2 {
+.container h2 {
     text-decoration: 3px underline dotted;
     color: rgb(7, 86, 117);
 }
 
-.flexbox-container h3 {
+.container h3 {
     display: inline-block; /* this made it possible to limit 
     the underline area just below the text */
     border-bottom: 2px solid;
@@ -73,38 +73,39 @@ header img:hover { /* it fires when the user hovers over the element with the mo
     color: rgb(7, 86, 117);
 }
 
-.flexbox-container ul { 
+.container ul { 
     padding-left: 30px;
     line-height: 25px;
 }
 
-.flexbox-container table {
+.container table {
     line-height: 25px;
 }
 
-.flexbox-personal {
+.personal, 
+.profile,
+.skills {
     margin: 25px;
     padding: 35px;
+}
+
+.personal {
     background-color: rgba(36, 12, 12, 0.23);
     backdrop-filter: blur(10px);
     border-radius: 20px;
 }
 
-.flexbox-profile {
-    margin: 25px;
-    padding: 35px;
+.profile {
     background-color: rgb(0,0,0,0.23);
     backdrop-filter: blur(10px);
     border-radius: 20px;
 }
 
-.flexbox-profile p {
+.profile p {
     text-align: justify;
 }
 
-.flexbox-skills {
-    margin: 25px;
-    padding: 35px;
+.skills {
     background-color: rgb(0,0,0,0.23);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -114,6 +115,4 @@ footer {
     clear: both; /* Sets the element from both edges to the bottom */
     text-align: center;
     color: black;
-    
   }
-  
